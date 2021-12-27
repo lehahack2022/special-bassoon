@@ -1,0 +1,54 @@
+.pane {
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid grey;
+  z-index: 2;
+}
+
+#pane-1 {
+  left: 0px;
+  top: 10%;
+  animation: left-right 2s infinite alternate;
+}
+
+@keyframes left-right {
+  to {
+    left: -25%;
+  }
+}
+
+#pane-2 {
+  left: 30%;
+  top: 0px;
+  animation: right-left 3s infinite alternate;
+}
+
+@keyframes right-left {
+  to {
+    left: 55%;
+  }
+}
+
+#pane-3 {
+  left: 25%;
+  top: 30%;
+  animation: down-up 4s infinite alternate;
+}
+
+@keyframes down-up {
+  to {
+    top: 55%;
+  }
+}
+
+#ufo {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  width: fit-content;
+  z-index: 1;
+  font-size: 60px;
+}
